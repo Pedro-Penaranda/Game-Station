@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon icono en la pestania -->
+    <link rel="icon" href="imagen/favicon/favicon.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Itim&display=swap" rel="stylesheet">
+
+
+    <!-- boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="sass/estilos.css">
+
+    <!-- nombre en la pestania del navegador -->
+    <title>Game Station - Nintendo</title>
+
+    <!-- SEO meta description -->
+    <meta name="description" content="En esta sección de Game Station encontrarás todos artículos relacionados a Nintendo, estas pequeñas consolas con la cual podes jugar donde sea y cuando sea">
+
+    <!-- SEO meta keywords -->
+    <meta name="keywords" content="Nintendo, nintendo switch, nintendo 3DS, estilos, consolas, juegos, joysticks, gaming, gamer, jugador">
+</head>
+
+<body>
+  
+    <!-- contenedor del logo titulo buscador carrito usuario --> 
+    <div class="contHead"> 
+      <div class="contHead-logTituPrincipal d-flex">
+        <!-- logo principal -->
+        <img src="imagen/logo/logo.png" alt="logoPrincipal" class="logo-head">
+
+        <!-- titulo principal -->
+        <h1><a href="index.html" class="gstation gstation__titulo">GAME STATION</a></h1>
+      </div>
+      <!-- buscador -->
+      <div class="contHead-buscar">
+        <input type="text" placeholder="Buscar"><button type="submit" class="btn-buscar"><img src="imagen/otros/lupa.png" alt="lupa"></button>
+      </div>
+
+      <!-- carrito y usario -->
+      <div class="contHead-carUsu">
+        <a href="compras.html"><img src="imagen/otros/carrtio.png" alt="carrito" class="contHead__carrito--carUsu"></a>
+        <img src="imagen/otros/persona.png" alt="usuario" class="contHead__usuario--carUsu">
+      </div>
+    </div>
+
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="nav-link" href="index.html" id="home"><img src="imagen/imagenes de menu/imggs.png" alt="home" class="el-img-home"><h5 class="el-h5Home">Home</h5></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="imagen/logo/main-hamburguesa.png" alt="iconmenu" class="iconMainHamburguer">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" body>
+                <ul class="navbar-nav col-12 justify-content-around">
+
+                  <!-- menu playstation -->
+                  <li class="nav-item dropdown" id="el-nav-playstation">
+                    <a class="nav-link" href="playstation.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="imagen/imagenes de menu/imgps.png" alt="playstation" class="imgPs__menu"><h5 class="h5Ps">Playstation</h5></a>
+                      <ul class="dropdown-menu subps__menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item el-liA" href="playstation.html">Playstation</a></li>
+                        <li><a class="dropdown-item" href="playstation.html#consola-ps">Consolas</a></li>
+                        <li><a class="dropdown-item" href="playstation.html#juego-ps">Juegos</a></li>
+                        <li><a class="dropdown-item" href="playstation.html#joystick-ps">Joysticks</a></li>
+                        <li><a class="dropdown-item" href="playstation.html#headset-ps">Headsets</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- manu xbox -->
+                  <li class="nav-item dropdown" id="el-nav-xbox">
+                    <a class="nav-link" href="xbox.html" role="button" data-bs-toggle="dropdown"><img src="imagen/imagenes de menu/imgxbox.png" alt="xbox" class="imgXbox__menu"><h5 class="h5Xbox">Xbox</h5></a>
+                      <ul class="dropdown-menu subxbox__menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item el-liA" href="xbox.html">Xbox</a></li>
+                        <li><a class="dropdown-item" href="xbox.html#consola-xbox">Consolas</a></li>
+                        <li><a class="dropdown-item" href="xbox.html#juego-xbox">Juegos</a></li>
+                        <li><a class="dropdown-item" href="xbox.html#joystick-xbox">Joysticks</a></li>
+                        <li><a class="dropdown-item" href="xbox.html#headset-xbox">Headsets</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- home -->
+                  <li class="nav-item index">
+                    <a class="nav-link" href="index.html"><img src="imagen/imagenes de menu/imggs.png" alt="home" class="imgGs__menu"><h5 class="h5Home">Home</h5></a>
+                  </li>
+
+                  <!-- manu pc -->
+                  <li class="nav-item dropdown" id="el-nav-pc">
+                    <a class="nav-link" href="pc.html" role="button" data-bs-toggle="dropdown"><img src="imagen/imagenes de menu/imgpc.png" alt="pc" class="imgPc__menu"><h5 class="h5Pc">Pc</h5></a>
+                      <ul class="dropdown-menu subpc__menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item el-liA" href="pc.html">Pc</a></li>
+                        <li><a class="dropdown-item" href="pc.html#monitor">Monitores</a></li>
+                        <li><a class="dropdown-item" href="pc.html#teclado">Teclados</a></li>
+                        <li><a class="dropdown-item" href="pc.html#mouse">Mouses</a></li>
+                        <li><a class="dropdown-item" href="pc.html#headset">Headsets</a></li>
+                        <li><a class="dropdown-item" href="pc.html#procesador">Procesadores</a></li>
+                        <li><a class="dropdown-item" href="pc.html#gabinete">Gabinetes</a></li>
+                        <li><a class="dropdown-item" href="pc.html#placaVideo">Placas de video</a></li>
+                        <li><a class="dropdown-item" href="pc.html#motherboard">Motherboards</a></li>
+                        <li><a class="dropdown-item" href="pc.html#silla">Sillas</a></li>
+                        <li><a class="dropdown-item" href="pc.html#fuente">Fuentes</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- menu nintendo -->
+                  <li class="nav-item dropdown" id="el-nav-nintendo">
+                    <a class="nav-link" href="nintendo.html" role="button" data-bs-toggle="dropdown"><img src="imagen/imagenes de menu/imgnintendo.png" alt="nintendo" class="imgNintendo__menu"><h5 class="h5Nintendo">Nintendo</h5></a>
+                      <ul class="dropdown-menu subnintendo__menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item el-liA" href="nintendo.html">Nintendo</a></li>
+                        <li><a class="dropdown-item" href="#consola-nintendo">Consolas</a></li>
+                        <li><a class="dropdown-item" href="#juego-nintendo">Juegos</a></li>
+                        <li><a class="dropdown-item" href="#accesorio-nintendo">Accesorios</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <main>
+    <!-- icono de whatsapp -->
+    <a href="https://web.whatsapp.com/" class="linkWpp"><img src="imagen/logo/whatsapp-icon.png" alt="wppStiky" class="wppAll"></a>
+
+    <!-- subtitulo de nintendo -->
+      <div class="nintendo">
+          <h2 class="subti subti--nintendo">NINTENDO</h2>
+      </div>
+    <!-- seccion consolas -->
+    <span class="subti--producto" id="consola-nintendo">Consolas</span>
+
+    <div class="contLinea--subti">
+      <hr class="linea--subti">
+    </div>
+
+    <div class="allProduct d-flex justify-content-center">
+        <div class="card card--nintendo" style="width: 14rem;">
+            <img src="imagen/nintendo/consolas/nintendo-switch.png" class="card-img-top" alt="consolaNintendoSwitch">
+            <div class="card-body">
+              <h6 class="card-title">Nintendo swith</h6>
+              <h5 class="card-precio">Precio: $60.000</h5>
+              <a href="compras.html" class="btn btn-comprar">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card card--nintendo" style="width: 14rem;">
+            <img src="imagen/nintendo/consolas/nintendo-switch-mario.png" class="card-img-top" alt="consolaNintendoMario">
+            <div class="card-body">
+              <h6 class="card-title">Nintendo switch mario</h6>
+              <h5 class="card-precio">Precio: $63.000</h5>
+              <a href="compras.html" class="btn btn-comprar">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card card--nintendo" style="width: 14rem;">
+          <img src="imagen/nintendo/consolas/nintendo-3ds.png" class="card-img-top" alt="consolaNintendo3ds">
+          <div class="card-body">
+            <h6 class="card-title">Nintendo 3DS</h6>
+            <h5 class="card-precio">Precio: $8.000</h5>
+            <a href="compras.html" class="btn btn-comprar">Comprar</a>
+          </div>
+      </div>
+    </div>
+
+    <!-- seccion juegos -->
+    <span class="subti--producto" id="juego-nintendo">Juegos</span>
+
+    <div class="contLinea--subti">
+      <hr class="linea--subti">
+    </div>
+
+    <div class="allProduct d-flex justify-content-center">
+        <div class="card card--nintendo" style="width: 14rem;">
+            <img src="imagen/nintendo/juegos/smashbros3ds.png" class="card-img-top" alt="juego3ds">
+            <div class="card-body">
+              <h6 class="card-title">Smashbros 3DS</h6>
+              <h5 class="card-precio">Precio: $5.000</h5>
+              <a href="compras.html" class="btn btn-comprar">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card card--nintendo" style="width: 14rem;">
+            <img src="imagen/nintendo/juegos/crashBandicoot4.png" class="card-img-top" alt="juegoCrashNintendo">
+            <div class="card-body">
+              <h6 class="card-title">Crash bandicoot 4 Stwich</h6>
+              <h5 class="card-precio">Precio: $6.900</h5>
+              <a href="compras.html" class="btn btn-comprar">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card card--nintendo" style="width: 14rem;">
+          <img src="imagen/nintendo/juegos/minecraftnintendo.jpg" class="card-img-top" alt="juegoMinecraft">
+          <div class="card-body">
+            <h6 class="card-title">Minecraft Switch</h6>
+            <h5 class="card-precio">Precio: $5.100</h5>
+            <a href="compras.html" class="btn btn-comprar">Comprar</a>
+          </div>
+      </div>
+    </div>
+
+    <!-- seccion accesorios -->
+    <span class="subti--producto" id="accesorio-nintendo">Accesorios</span>
+
+    <div class="contLinea--subti">
+      <hr class="linea--subti">
+    </div>
+
+    <div class="allProduct d-flex justify-content-center">
+        <div class="card card--nintendo" style="width: 14rem;">
+            <div class="cardimg">
+              <img src="imagen/nintendo/accesorios/switch-protector.png" class="card-img-top" alt="protectorNintendo">
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Protector N. switch</h6>
+                <h5 class="card-precio">Precio: $2.900</h5>
+                <a href="compras.html" class="btn btn-comprar">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card card--nintendo" style="width: 14rem;">
+            <img src="imagen/nintendo/accesorios/nintendoswitch.png" class="card-img-top" alt="SoporteNintendo">
+            <div class="card-body">
+              <h6 class="card-title">Soporte Nintendo Switch</h6>
+              <h5 class="card-precio">Precio: $5.000</h5>
+              <a href="compras.html" class="btn btn-comprar">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card card--nintendo" style="width: 14rem;">
+          <img src="imagen/nintendo/accesorios/anillo-fit.png" class="card-img-top" alt="anilloFitNintendo">
+          <div class="card-body">
+            <h6 class="card-title">N. switch anillo fit</h6>
+            <h5 class="card-precio">Precio: $2.050</h5>
+            <a href="compras.html" class="btn btn-comprar">Comprar</a>
+          </div>
+      </div>
+    </div>
+
+    <!-- metodos de pago -->
+    <div class="metodopago1--contenedor d-flex justify-content-around align-items-center">
+      <div class="metodopago1__tarjeta--contenedor">
+        <img src="imagen/metodo de envio/tarjetamano.png" alt="tarjeta">
+        <span class="txtPago"><p>Paga con tarjeta o efectivo</p></span>
+      </div>
+
+      <div class="metodopago1__escudo--contenedor">
+        <img src="imagen/metodo de envio/escudo.png" alt="escudo">
+        <span class="txtPago"><p>Compra protegida</p></span>
+      </div>
+
+      <div class="metodopago1__auto--contenedor">
+        <img src="imagen/metodo de envio/autoenvio.png" alt="autoenvio">
+        <span class="txtPago"><p>Envío o retiro en sucursal</p></span>
+      </div>
+    </div>
+  </main>
+    
+      <!-- footer -->
+      <footer class="footer footer--fondo">
+
+        <!-- parte de arriba del footer -->
+        <div class="seccion--footer seccion__arriba--footer">
+          <div class="seccion seccion--comprar">
+            <span class="tlf">Comprar</span>
+            <ul class="ulTlf">
+              <li><a href="#">¿Cómo comprar?</a></li>
+              <li><a href="#">Lista de juegos</a></li>
+              <li><a href="#">Colecciones</a></li>
+              <li><a href="#">Tienda</a></li>
+            </ul>
+          </div>
+  
+          <!-- seccion ayuda del footer -->
+          <div class="seccion seccion--ayuda">
+            <span class="tlf">Ayuda</span>
+            <ul class="ulTlf">
+              <li><a href="#">¿Necesitas ayuda?</a></li>
+              <li><a href="#">Crear comprabante</a></li>
+            </ul>
+          </div>
+  
+          <!-- seccion nuevos productos del footer -->
+          <div class="seccion seccion--nproductos">
+            <span class="tlf">Nuestros productos</span>
+            <ul class="ulTlf">
+              <li><a href="playstation.html">Playstation</a></li>
+              <li><a href="xbox.html">Xbox</a></li>
+              <li><a href="nintendo.html">Nintendo</a></li>
+              <li><a href="pc.html">PC</a></li>
+            </ul>
+          </div>
+  
+          <!-- seccion soporte del footer -->
+          <div class="seccion seccion--soporte">
+            <span class="tlf">Soporte</span>
+            <ul class="ulTlf">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Políticas de privacidad</a></li>
+              <li><a href="#">Contactanos</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- linea de divsion en el footer -->
+        <hr class="linea linea--footer">
+  
+        <!-- parte de abajo del footer -->
+        <div class="seccion seccion--footer seccion__abajo--footer">
+          <div class="seccion seccion--rsociales">
+            <div class="rSocial--titulo">
+              <h5>Seguinos en nuestras redes sociales</h5>
+            </div>
+            <ul class="lista-redSocial">
+              <li><a href="https://www.facebook.com/"><img src="imagen/redesociales/facebook.png" alt="facebook"></a></li>
+              <li><a href="https://www.instagram.com/"><img src="imagen/redesociales/instagram.png" alt="instagram"></a></li>
+              <li><a href="https://twitter.com/"><img src="imagen/redesociales/twitter.png" alt="twitter"></a></li>
+              <li><a href="https://discord.com/"><img src="imagen/redesociales/discord.png" alt="discord"></a></li>
+            </ul>
+          </div>    
+
+          <!-- nuevas novedades por mail -->
+          <div class="mb-3 mail-footer">
+            <label for="exampleInputEmail1" class="form-label mail__lbl--footer">Para nuevas novedades:</label>
+            <div class="d-flex cont-emBtn">
+              <input type="email" class="form-control input-mail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba su mail aqui">
+              <button type="submit" class="btn mail__btn--footer">Enviar</button>
+            </div>
+          </div>
+  
+          <div class="img img--logo">
+            <a href="#"><img src="imagen/logo/logoFooter.png" alt="logoFooter"></a>
+          </div>
+        </div>
+
+        <h6 class="copy">Copyright © Pedro Peñaranda</h6>
+      </footer>
+  
+      <!-- boostrap  java script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

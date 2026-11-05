@@ -1,0 +1,383 @@
+@media (max-width: 472px) and (min-width: 300px){
+    /* todo del header */
+    .contHead{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "gamestation gamestation"
+                             "buscador carUsu";
+        padding: 0px 0px 10px;
+        justify-items: center;
+        .contHead-logTituPrincipal{
+            grid-area: gamestation;
+            .logo-head{
+                width: 45px;
+                height: 45px;
+            }
+            h1{
+                .gstation__titulo{
+                    font-size: 25px;
+                    letter-spacing: 10px;
+                    text-shadow: 5px 5px 5px #000000;
+                }
+            }
+        }    
+        .contHead-buscar{
+            margin-left: 10px;
+            grid-area: buscador;
+        }
+
+        .contHead-carUsu{
+            grid-area: carUsu;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    
+    /* navegador */
+    .navbar{
+        padding: 5px 0px 15px;
+        margin-top: 10px;
+        #el-nav-playstation{background-image: linear-gradient(to bottom,rgba(17, 17, 228, 0.300), rgba(5, 5, 56, 0.300));}
+        #el-nav-xbox{background-image: linear-gradient(to bottom, rgba(13, 199, 13, 0.300), rgba(7, 71, 18, 0.300));}
+        #el-nav-pc{background-image: linear-gradient(to bottom, rgba(141, 15, 231, 0.300), rgba(39, 5, 63, 0.300));}
+        #el-nav-nintendo{background-image: linear-gradient(to bottom, rgba(238, 9, 9, 0.300), rgba(97, 8, 8, 0.300));}
+    }
+
+    /* tamanio de letras en los submenu */
+    .subps__menu, .subxbox__menu, .subpc__menu, .subnintendo__menu{
+        .dropdown-item{
+            font-size: 18px; 
+        }
+    }
+
+    /* icono de el menu hamburguesa */
+    .iconMainHamburguer{
+        height: 30px;
+        width: 30px;
+    }
+
+    /* boton del manu hamburguesa */
+    .navbar-toggler:focus{
+        box-shadow: 4px 4px 5px #c4450b,
+                    -4px -4px 5px #c4450b;
+    }
+
+    /* Tamanios de las imagenes */
+    .imgPs__menu, .imgXbox__menu, .imgPc__menu, .imgNintendo__menu{
+    width: 50px;
+    height: 50px;
+    }
+
+    /* modificacion de las letras del nav principal */
+    .h5Ps, .h5Xbox, .h5Pc, .h5Nintendo{
+        position: absolute;
+        top: 23px;
+        left: 85px;
+    }
+
+    /* imagen para responsive del home */
+    #home{
+        position: relative;
+        padding: 4px;
+        img{
+            height: 50px;
+            width: 50px;
+            background-image: linear-gradient(90deg, $colorHome, #c4450b,$colorHome);
+            border-radius: 100%;
+            background-repeat: repeat;
+            animation: gs 5s infinite;
+            background-size: 450%;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            box-shadow: 2px 2px 6px black;
+        }
+        .el-h5Home{
+            position: absolute;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-family: $letraChakra;
+            margin: 0px;
+            top: 16px;
+            left: 70px;
+            text-shadow: 3px 3px 6px black;
+        }
+    } 
+
+    
+    .index{
+        position: absolute;
+        padding: 0;
+        .imgGs__menu{
+            height: 0px;
+            width: 0px;
+        }
+        .h5Home{
+            position: absolute;
+            font-size: 0px;
+        }
+    }
+    
+    /* carrusel principal novedades */
+    .carousel--novedades{
+        /* imagen 1, 2 y 3 del carrusel*/
+        .imgCarrusel1, .imgCarrusel2, .imgCarrusel3{
+            height: 150px;
+        }
+       
+        /* textos dentro de la imagen 3 del carrusel */
+        .textNuevoCarrusel3{
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bolder;
+            left: 11%;
+            font-size: 25px;
+        }
+        .textGabiCarrusel3{
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bolder;
+            top: 35%;
+            left: 13%;
+            font-size: 23px;
+        }
+        .textOcelotCarrusel3{
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bolder;
+            top: 58%;
+            left: 20%;
+            font-size: 23px;
+        }
+        .textVerCarrusel3{
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bolder;
+            top: 80%;
+            left: 44%;
+            font-size: 15px;
+        }
+        .textVerCarrusel3:hover{
+            color: rgb(173, 164, 150);
+        }
+
+        .contenedor-ps5carrusel{
+            width: 90%;
+            .list-ps5carrusel{
+                top: 7%;
+                left: 6%;
+                span{font-size: 14px;}
+                p{font-size: 12px; margin-bottom: 4px;}
+            }
+        } 
+        /* textos dentro del carrusel */
+        .textConsolaCarrusel{
+            font-size: 12px;
+            top: 1%;
+            left: 42%;
+        }
+        .textJoystickCarrusel{
+            top: 48%;
+            left: 69%;
+        }
+        .textHeadsetCarrusel{
+            top: 26%;
+            left: 14%;
+        }
+
+        /* botones dentro del carrusel */
+        .boton{
+            height: 32px;
+            width: 30px;
+        }
+    }
+
+    /* subtitulos de todas los html de productos */
+    .subti--playstation, .subti--xbox, .subti--pc, .subti--nintendo{
+        font-size: 28px;
+        padding-bottom: 1px;
+    }
+
+    /* subtitulos de las secciones dentro de los html de los productos */
+    main{
+        .subti--producto{
+            font-size: 24px;
+            font-weight: bolder;
+            padding-left: 10px;
+            padding-top: 25px;
+        }
+    }
+
+    /* boton de pc de submenu */
+    .contenedor-subMenuPc{
+        top: 1.8%;
+        left: -3%;
+        .btn-subPc{
+            font-size: 13px;
+        }
+    
+        .submenuPc{
+            li{
+                a{
+                    color: white;
+                    text-align: center;
+                }
+                a:hover{
+                    background-color: rgba(71, 24, 104, 0.568);
+                    text-align: left;
+                }
+            }
+        }
+    
+    }
+
+    /* nueva posicion de las cards para el responsive */
+    .allProduct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* metodo de pago */
+    .metodopago1--contenedor{
+        height: 120px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        .txtPago{
+            font-size: 10px;
+        }
+        /* animacion de tarjeta */
+        @keyframes tarjeta{
+            0%{transform: translate(65px);}
+            50%{transform: translate(-0px);}
+            100%{transform: translate(65px);}
+        }
+
+        /* animacion de escudo */
+        @keyframes escudo{
+            0%{transform: translate(25px) perspective(150px) rotateY(45deg);}
+            50%{transform: translate(-2px) perspective(150px) rotateY(-45deg);}
+            100%{transform: translate(25px) perspective(150px) rotateY(45deg);}
+        }
+
+        /* animacion de auto */
+        @keyframes car{
+            0%{transform: translate(56px);}
+            25%{transform: translate(0px);}
+            50%{transform: translate(0px) perspective(200px) rotateY(-180deg);}
+            75%{transform: translate(56px) perspective(200px) rotateY(-180deg);}
+            100%{transform: translate(56px) perspective(200px) rotateY(0deg);}
+        }
+    }
+
+
+    /* footer */
+    .footer{
+        height: 550px;
+    }
+    .seccion__arriba--footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "fComprar fNproductos"
+                             "fSoporte fAyuda";
+        padding: 10px;
+        justify-items: left;
+        .tlf{
+            padding: 0px 8px;
+            font-size: 15px;
+        }
+        a{
+            font-size: 13px;
+            width: 90%;
+            padding: 1px 15px;
+        }
+
+        .seccion--comprar{
+            grid-area: fComprar;
+            margin-bottom: 13px;
+        }
+        
+        .seccion--ayuda{
+            grid-area: fAyuda;
+        }
+        
+        .seccion--nproductos{
+            grid-area: fNproductos;
+            margin-bottom: 13px;
+        }
+        
+        .seccion--soporte{
+            grid-area: fSoporte;
+        }
+
+    }
+
+    .seccion__abajo--footer{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "social social"
+                             "buscador logoFoot";
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mail-footer{
+        grid-area: buscador;
+        margin-left: 15px;
+    }
+    
+    .img--logo{
+        grid-area: logoFoot;
+        padding: 0px 0px;
+        img{
+            padding: 10px;
+            width: 70px;
+            height: 70px;
+        }
+    }
+    
+    .seccion--rsociales{
+        grid-area: social;
+        h5{
+            padding: 0px 26px;
+            font-size: 15px;
+        }
+        img{
+            width: 36px;
+            height: 36px;
+        } 
+    }
+    
+    .rSocial--titulo{
+        grid-area: rsocial;
+    }
+
+    /* mail para recibir novedades */
+    .mail-footer{
+            .input-mail{
+                width: 65%;
+                border-radius: 40px 0px 0px 40px; 
+            }
+            .mail__btn--footer{          
+                width: 25%;
+                border-radius: 0px 40px 40px 0px;
+                border: 1px solid white;
+            }
+    }
+    
+
+    /* icono de whatsapp */
+    .linkWpp{
+        .wppAll{
+            width: 45px;
+            height: 45px;
+            right: 1.5%;
+            top: 90.5%;
+        }
+    }
+}
+

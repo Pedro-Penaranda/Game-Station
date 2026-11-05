@@ -1,0 +1,298 @@
+@media (max-width: 1023px) and (min-width: 767px){
+    /* todo del header */
+    .contHead{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "gamestation gamestation"
+                             "buscador carUsu";
+        padding: 0px 0px 10px;
+        justify-items: center;
+        .contHead-logTituPrincipal{
+            grid-area: gamestation;
+            .logo-head{
+                width: 60px;
+                height: 60px;
+            }
+            h1{
+                .gstation__titulo{
+                    font-size: 55px;
+                    letter-spacing: 15px;
+                    top: 15px;
+                }
+            }
+        }    
+        .contHead-buscar{
+            grid-area: buscador;
+            input{
+                width: 300px;
+            }
+        }
+
+        .contHead-carUsu{
+            grid-area: carUsu;
+            img{
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+
+    /* navegador */
+    .navbar{
+        #el-nav-playstation{background-image: linear-gradient(to bottom,rgba(17, 17, 228, 0.300), rgba(5, 5, 56, 0.300));}
+        #el-nav-xbox{background-image: linear-gradient(to bottom, rgba(13, 199, 13, 0.300), rgba(7, 71, 18, 0.300));}
+        #el-nav-pc{background-image: linear-gradient(to bottom, rgba(141, 15, 231, 0.300), rgba(39, 5, 63, 0.300));}
+        #el-nav-nintendo{background-image: linear-gradient(to bottom, rgba(238, 9, 9, 0.300), rgba(97, 8, 8, 0.300));}
+    }
+
+    /* carrusel principal novedades */
+    .carousel--novedades{
+        /* imagen 1, 2 y 3 del carrusel*/
+        .imgCarrusel1, .imgCarrusel2, .imgCarrusel3{
+            height: 240px;
+        }
+       
+        /* textos dentro de la imagen 3 del carrusel */
+        .textNuevoCarrusel3{
+            font-family: fantasy;
+            top: 2%;
+            left: 12%;
+            font-size: 55px;
+        }
+        .textGabiCarrusel3{
+            font-family: fantasy;
+            top: 32%;
+            left: 16%;
+            font-size: 48px;
+        }
+        .textOcelotCarrusel3{
+            font-family: fantasy;
+            top: 54%;
+            left: 24%;
+            font-size: 48px;
+        }
+        .textVerCarrusel3{
+            font-family: fantasy;
+            top: 80%;
+            left: 50%;
+            font-size: 27px;
+        }
+        .textVerCarrusel3:hover{
+            color: rgb(173, 164, 150);
+        }
+
+        .contenedor-ps5carrusel{
+            width: 60%;
+            .list-ps5carrusel{
+                top: 16%;
+                left: 13%;
+                span{font-size: 18px;}
+                p{font-size: 15px; margin-bottom: 8px;}
+            }
+        } 
+        /* textos dentro del carrusel */
+        .textConsolaCarrusel{
+            font-size: 17px;
+            top: 2%;
+            left: 43%;
+        }
+        .textJoystickCarrusel{
+            top: 49%;
+            left: 71%;
+        }
+        .textHeadsetCarrusel{
+            top: 26%;
+            left: 15%;
+        }
+    }
+
+    /* tamanio de letras en los submenu */
+    .subps__menu, .subxbox__menu, .subpc__menu, .subnintendo__menu{
+        .dropdown-item{
+            font-size: 20px; 
+        }
+    }
+
+    /* boton del manu hamburguesa */
+    .navbar-toggler:focus{
+        box-shadow: 4px 4px 5px #c4450b,
+                    -4px -4px 5px #c4450b;
+    }
+
+    /* Tamanios de las imagenes */
+    .imgPs__menu, .imgXbox__menu, .imgPc__menu, .imgNintendo__menu{
+        width: 75px;
+        height: 75px;
+        }
+
+    /* modificacion de las letras del nav principal */
+    .h5Ps, .h5Xbox, .h5Pc, .h5Nintendo{
+        position: absolute;
+        top: 33px;
+        left: 95px;
+    }
+
+    /* imagen para responsive del home */
+    #home{
+        position: relative;
+        padding: 4px;
+        img{
+            height: 75px;
+            width: 75px;
+            background-image: linear-gradient(90deg, $colorHome, #c4450b,$colorHome);
+            border-radius: 100%;
+            background-repeat: repeat;
+            animation: gs 5s infinite;
+            background-size: 450%;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            box-shadow: 2px 2px 6px black;
+        }
+        .el-h5Home{
+            position: absolute;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-family: $letraChakra;
+            margin: 0px;
+            top: 30px;
+            left: 93px;
+            text-shadow: 3px 3px 6px black;
+        }
+    } 
+
+    
+    .index{
+        position: absolute;
+        padding: 0;
+        .imgGs__menu{
+            height: 0px;
+            width: 0px;
+        }
+        .h5Home{
+            position: absolute;
+            font-size: 0px;
+        }
+    }
+
+    /* botones dentro del carrusel */
+    .boton{
+        height: 29px;
+        width: 27px;
+    }
+
+     /* subtitulos de todas los html de productos */
+     .subti--playstation, .subti--xbox, .subti--pc, .subti--nintendo{
+        font-size: 38px;
+        padding: 0;
+    }
+
+     /* subtitulos de las secciones dentro de los html de los productos */
+     main{
+        .subti--producto{
+            font-size: 32px;
+        }
+    }
+
+    /* metodo de pago */
+    .metodopago1--contenedor{
+        height: 150px;
+        img{
+            width: 90px;
+            height: 90px;
+        }
+        .txtPago{
+            font-size: 13px;
+        }
+        /* animacion de tarjeta */
+        @keyframes tarjeta{
+            0%{transform: translate(65px);}
+            50%{transform: translate(-0px);}
+            100%{transform: translate(65px);}
+        }
+
+        /* animacion de escudo */
+        @keyframes escudo{
+            0%{transform: translate(25px) perspective(150px) rotateY(45deg);}
+            50%{transform: translate(-2px) perspective(150px) rotateY(-45deg);}
+            100%{transform: translate(25px) perspective(150px) rotateY(45deg);}
+        }
+
+        /* animacion de auto */
+        @keyframes car{
+            0%{transform: translate(56px);}
+            25%{transform: translate(0px);}
+            50%{transform: translate(0px) perspective(200px) rotateY(-180deg);}
+            75%{transform: translate(56px) perspective(200px) rotateY(-180deg);}
+            100%{transform: translate(56px) perspective(200px) rotateY(0deg);}
+        }
+    }
+
+     /* footer */
+     .footer{
+        height: 320px;
+    }
+
+    .seccion__arriba--footer{
+        .tlf{
+            font-size: 16px;
+        }
+        a{
+            font-size: 14px;
+            width: 90%;
+            padding: 1px 15px;
+        }
+    }
+
+    /* parte de abajo del footer*/
+    .seccion__abajo--footer{
+        display: grid;
+        grid-template-columns: 40% 40% 20%;
+        grid-template-areas: "fSocial fMail fLogo";
+    }
+
+    .img--logo{
+        grid-area: fLogo;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+    .seccion--rsociales{
+        grid-area: fSocial;
+        padding: 1px;
+        h5{
+            padding: 0px 1px;
+            font-size: 16px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        } 
+    }
+
+    /* mail para recibir novedades */
+    .mail-footer{
+        grid-area: fMail;
+        margin-left: 15px;
+        .input-mail{
+            width: 70%; 
+        }
+        .mail__btn--footer{          
+            width: 28%;
+        }
+    }
+
+    /* icono de whatsapp */
+    .linkWpp{
+        .wppAll{
+            width: 60px;
+            height: 60px;
+            right: 1%;
+            top: 86%;
+        }
+    }
+}

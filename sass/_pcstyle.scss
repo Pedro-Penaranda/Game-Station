@@ -1,0 +1,67 @@
+.subti--pc{
+    color: rgb(160, 65, 228);
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 45px;
+    padding-bottom: 15px;
+    letter-spacing: 1rem;
+    text-shadow: 3px 3px 5px black;
+    font-weight: bolder;
+}
+
+.contenedor-subMenuPc{
+    position: absolute;
+    top: 5.5%;
+    left: 1.2%;
+    .btn-subPc{
+        background-image: linear-gradient(to top, rgb(141, 15, 231), rgb(39, 5, 63));
+        margin-left: 15px;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    .btn-subPc:focus{
+        box-shadow: none;
+        background-image: linear-gradient(to top, rgb(108, 13, 175), rgb(22, 3, 36));
+    }
+
+    .submenuPc{
+        border-radius: 10px;
+        background-image: linear-gradient(to left, rgb(141, 15, 231), rgb(39, 5, 63));
+        li{
+            a{
+                color: white;
+                text-align: center;
+            }
+            a:hover{
+                background-color: rgba(71, 24, 104, 0.568);
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+.card--pc{
+    background-image: linear-gradient(30deg, rgb(141, 15, 231), rgb(39, 5, 63),rgb(141, 15, 231));
+    background-repeat: repeat;
+    animation: cardPc 4s infinite;
+    background-size: 500%;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+}
+
+/* animacion de fondo de de productos */
+@keyframes cardPc{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50% ;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
